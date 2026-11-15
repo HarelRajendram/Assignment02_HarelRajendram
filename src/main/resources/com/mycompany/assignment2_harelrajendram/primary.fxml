@@ -10,13 +10,12 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane layoutX="9.0" layoutY="29.0" prefHeight="209.0" prefWidth="673.0" style="-fx-background-color: grey;">
+      <Pane layoutX="9.0" layoutY="29.0" prefHeight="209.0" prefWidth="689.0" style="-fx-background-color: grey;">
          <children>
             <Pane layoutX="1.0" prefHeight="207.0" prefWidth="111.0" style="-fx-background-color: #00900c;" />
-            <Pane layoutX="560.0" layoutY="-2.0" prefHeight="212.0" prefWidth="111.0" style="-fx-background-color: #00900c;">
+            <Pane layoutX="586.0" layoutY="-2.0" prefHeight="212.0" prefWidth="99.0" style="-fx-background-color: #00900c;">
                <children>
                   <Label alignment="CENTER_RIGHT" layoutX="-57.0" layoutY="27.0" prefHeight="60.0" prefWidth="226.0" rotate="90.0" text="Arrival" textFill="WHITE">
                      <font>
@@ -25,40 +24,60 @@
                   </Label>
                </children>
             </Pane>
-            <Line endX="-78.54405212402344" layoutX="560.0" layoutY="58.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="343.0" layoutY="57.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="491.0" layoutY="58.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="280.0" layoutY="57.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="415.0" layoutY="57.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="611.0" layoutY="58.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="218.0" layoutY="56.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="563.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="339.0" layoutY="47.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="485.0" layoutY="47.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="277.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="413.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="631.0" layoutY="47.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="217.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="218.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="278.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="340.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="413.0" layoutY="96.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="485.0" layoutY="95.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="562.0" layoutY="95.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="631.0" layoutY="94.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="219.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="277.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="338.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="411.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="482.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="561.0" layoutY="148.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="628.0" layoutY="146.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="217.0" layoutY="188.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="277.0" layoutY="187.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="339.0" layoutY="187.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="412.0" layoutY="186.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="482.0" layoutY="187.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="562.0" layoutY="185.0" startX="-100.0" stroke="WHITE" />
          </children>
       </Pane>
-      <ImageView fitHeight="25.0" fitWidth="65.0" layoutX="30.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Car09" fitHeight="25.0" fitWidth="65.0" layoutX="30.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../image/car_black_09.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="25.0" fitWidth="65.0" layoutX="30.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Car31" fitHeight="25.0" fitWidth="65.0" layoutX="30.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../image/car_blue_31.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="25.0" fitWidth="65.0" layoutX="30.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Car87" fitHeight="25.0" fitWidth="65.0" layoutX="30.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../image/car_green_87.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="25.0" fitWidth="65.0" layoutX="32.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Car12" fitHeight="25.0" fitWidth="65.0" layoutX="30.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../image/car_yellow_12.png" />
          </image>
       </ImageView>
       <HBox layoutX="9.0" layoutY="246.0" prefHeight="51.0" prefWidth="327.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: green;" text="Start" textFill="WHITE" />
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: blue;" text="Pause" textFill="WHITE" translateX="20.0" />
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: red;" text="Reset" textFill="WHITE" translateX="40.0" />
+            <Button fx:id="startButton" mnemonicParsing="false" onAction="#handleStart" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: green;" text="Start" textFill="WHITE" />
+            <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#handlePause" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: blue;" text="Pause" textFill="WHITE" translateX="20.0" />
+            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#handleReset" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: red;" text="Reset" textFill="WHITE" translateX="40.0" />
          </children>
       </HBox>
       <HBox layoutX="9.0" layoutY="318.0" prefHeight="100.0" prefWidth="398.0">
@@ -68,7 +87,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Slider max="2.0" min="0.25" translateX="60.0" translateY="20.0" />
+            <Slider fx:id="speedSlider" max="2.0" min="0.25" translateX="60.0" translateY="20.0" />
          </children>
       </HBox>
    </children>
