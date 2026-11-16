@@ -73,10 +73,38 @@ public class PrimaryController {
          Car31.getPoints().clear();
          Car87.getPoints().clear();
          
-         Car09.getPoints().addAll(160.0, 20.0, 300.0, 120.0,160.0, 220.0,20.0, 120.0, 160.0, 20.0);
-         Car12.getPoints().addAll(160.0, 20.0, 300.0, 120.0,160.0, 220.0,20.0, 120.0, 160.0, 20.0);
-         Car31.getPoints().addAll(160.0, 20.0, 300.0, 120.0,160.0, 220.0,20.0, 120.0, 160.0, 20.0);
-         Car87.getPoints().addAll(160.0, 20.0, 300.0, 120.0,160.0, 220.0,20.0, 120.0, 160.0, 20.0);
+         Car09.getPoints().addAll(
+                 0.0, 10.0, 
+                 15.0,  0.0,  
+                 40.0,  0.0, 
+                 55.0, 12.0, 
+                 65.0, 14.0,
+                 65.0, 24.0, 
+                 0.0, 24.0 );
+         Car12.getPoints().addAll(
+                0.0, 10.0, 
+                 15.0,  0.0,  
+                 40.0,  0.0, 
+                 55.0, 12.0, 
+                 65.0, 14.0,
+                 65.0, 24.0, 
+                 0.0, 24.0 );
+         Car31.getPoints().addAll(
+                 0.0, 10.0, 
+                 15.0,  0.0,  
+                 40.0,  0.0, 
+                 55.0, 12.0, 
+                 65.0, 14.0,
+                 65.0, 24.0, 
+                 0.0, 24.0 );
+         Car87.getPoints().addAll(
+                 0.0, 10.0, 
+                 15.0,  0.0,  
+                 40.0,  0.0, 
+                 55.0, 12.0, 
+                 65.0, 14.0,
+                 65.0, 24.0, 
+                 0.0, 24.0 );
          
          //controls the play speed of all the cars
          speedSlider.setMin(0.5);
@@ -95,10 +123,10 @@ public class PrimaryController {
         place = 1;
         
         //generates random speed for each cars
-        double randomSeconds1 = 1.0 + (Math.random() * 15.0); 
-        double randomSeconds2 = 1.0 + (Math.random() * 15.0);
-        double randomSeconds3 = 1.0 + (Math.random() * 15.0);
-        double randomSeconds4 = 1.0 + (Math.random() * 15.0);
+        double randomSeconds1 = 1.0 + (Math.random() * 13.0); 
+        double randomSeconds2 = 1.0 + (Math.random() * 13.0);
+        double randomSeconds3 = 1.0 + (Math.random() * 13.0);
+        double randomSeconds4 = 1.0 + (Math.random() * 13.0);
         
         //applying the animations to each car
         if(race == null ) {
@@ -119,21 +147,21 @@ public class PrimaryController {
      
      tt4.setOnFinished(e -> assignPlace("Car87")
         );
-            
-            Car09.setTranslateX(30);
-            Car12.setTranslateX(30);
-            Car31.setTranslateX(30);
-            Car87.setTranslateX(30);
+//            
+//            Car09.setTranslateX(25);
+//            Car12.setTranslateX(25);
+//            Car31.setTranslateX(25); 
+//            Car87.setTranslateX(25);
             
             tt1.setByX(finishLineX);
             tt2.setByX(finishLineX);
             tt3.setByX(finishLineX);
             tt4.setByX(finishLineX);
             
-            tt1.setInterpolator(Interpolator.LINEAR);
-            tt2.setInterpolator(Interpolator.LINEAR);
-            tt3.setInterpolator(Interpolator.LINEAR);
-            tt4.setInterpolator(Interpolator.LINEAR);
+            tt1.setInterpolator(Interpolator.EASE_BOTH);
+            tt2.setInterpolator(Interpolator.EASE_BOTH);
+            tt3.setInterpolator(Interpolator.EASE_BOTH);
+            tt4.setInterpolator(Interpolator.EASE_BOTH);
             
             race = new ParallelTransition(tt1,tt2,tt3,tt4);
             
@@ -160,10 +188,10 @@ public class PrimaryController {
            if(race != null) {
              race.stop();
          }
-            Car09.setTranslateX(15);
-            Car12.setTranslateX(15);
-            Car31.setTranslateX(15);
-            Car87.setTranslateX(15);
+            Car09.setTranslateX(0);
+            Car12.setTranslateX(0);
+            Car31.setTranslateX(0);
+            Car87.setTranslateX(0);
             
             winnerLabel.setText("Winner of the race:");
             SecondPlaceLabel.setText("Second place of the race:");
