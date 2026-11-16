@@ -6,6 +6,9 @@ import javafx.animation.Interpolator;
 import javafx.animation.ParallelTransition;
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
@@ -13,6 +16,7 @@ import javafx.scene.effect.MotionBlur;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Polygon;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class PrimaryController {
@@ -67,7 +71,13 @@ public class PrimaryController {
     @FXML private Label ThirdPlaceLabel;
      
      
-     public void initialize() {
+     public void initialize() throws IOException {
+         Parent root = FXMLLoader.load(getClass().getResource("secondary.fxml"));
+        Stage stage = (Stage) startButton.getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.setTitle("Car Racing Simulator");
+        stage.show();
+         
          Car09.getPoints().clear();
          Car12.getPoints().clear();
          Car31.getPoints().clear();
