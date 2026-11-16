@@ -11,6 +11,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.effect.MotionBlur;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
+import javafx.scene.shape.Polygon;
 import javafx.util.Duration;
 
 public class PrimaryController {
@@ -26,14 +28,27 @@ public class PrimaryController {
     private TranslateTransition tt3;
     private TranslateTransition tt4;
     
+  
     
-    @FXML private ImageView Car09;
+    @FXML
+    private Pane Car09Layout;
 
-    @FXML private ImageView Car12;
+    @FXML
+    private Pane Car12Layout;
 
-    @FXML private ImageView Car31;
+    @FXML
+    private Pane Car31Layout;
 
-    @FXML private ImageView Car87;
+    @FXML
+    private Pane Car87Layout;
+    
+    @FXML private Polygon Car09;
+
+    @FXML private Polygon Car12;
+
+    @FXML private Polygon Car31;
+
+    @FXML private Polygon Car87;
 
     @FXML private Button pauseButton;
 
@@ -53,6 +68,16 @@ public class PrimaryController {
      
      
      public void initialize() {
+         Car09.getPoints().clear();
+         Car12.getPoints().clear();
+         Car31.getPoints().clear();
+         Car87.getPoints().clear();
+         
+         Car09.getPoints().addAll(160.0, 20.0, 300.0, 120.0,160.0, 220.0,20.0, 120.0, 160.0, 20.0);
+         Car12.getPoints().addAll(160.0, 20.0, 300.0, 120.0,160.0, 220.0,20.0, 120.0, 160.0, 20.0);
+         Car31.getPoints().addAll(160.0, 20.0, 300.0, 120.0,160.0, 220.0,20.0, 120.0, 160.0, 20.0);
+         Car87.getPoints().addAll(160.0, 20.0, 300.0, 120.0,160.0, 220.0,20.0, 120.0, 160.0, 20.0);
+         
          //controls the play speed of all the cars
          speedSlider.setMin(0.5);
          speedSlider.setMax(2);
@@ -67,6 +92,7 @@ public class PrimaryController {
      
     //methods to handle each button
     public void handleStart() {
+        place = 1;
         
         //generates random speed for each cars
         double randomSeconds1 = 1.0 + (Math.random() * 15.0); 

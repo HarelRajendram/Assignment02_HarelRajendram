@@ -3,18 +3,39 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Slider?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.assignment2_harelrajendram.PrimaryController">
    <children>
       <Pane layoutX="9.0" layoutY="29.0" prefHeight="209.0" prefWidth="689.0" style="-fx-background-color: grey;">
          <children>
-            <Pane layoutX="1.0" prefHeight="209.0" prefWidth="111.0" style="-fx-background-color: #00900c;" />
+            <Pane layoutX="1.0" prefHeight="209.0" prefWidth="90.0" style="-fx-background-color: #00900c;">
+               <children>
+                  <Pane fx:id="Car09" layoutX="18.0" layoutY="1.0" prefHeight="51.0" prefWidth="60.0" style="-fx-background-color: grey;">
+                     <children>
+                        <Polygon fx:id="Car09" fill="DODGERBLUE" layoutX="30.0" layoutY="36.0" points="-21.5, 7.5, 20.49249267578125, 7.5, -0.5, -30.5" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="Car12" layoutX="15.0" layoutY="52.0" prefHeight="51.0" prefWidth="60.0" style="-fx-background-color: grey;">
+                     <children>
+                        <Polygon fx:id="Car12" fill="#ff1f1f" layoutX="30.0" layoutY="35.0" points="-19.954551696777344, 4.5646514892578125, 16.251319885253906, 4.5646514892578125, -2.6871376037597656, -29.970176696777344" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="Car31" layoutX="15.0" layoutY="105.0" prefHeight="51.0" prefWidth="60.0" style="-fx-background-color: grey;">
+                     <children>
+                        <Polygon fx:id="Car31" fill="#1fff57" layoutX="30.0" layoutY="36.0" points="-21.068580627441406, 3.480926513671875, 14.023262023925781, 3.480926513671875, 0.09792709350585938, -33.83897399902344" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="Car87" layoutX="15.0" layoutY="158.0" prefHeight="51.0" prefWidth="60.0" style="-fx-background-color: grey;">
+                     <children>
+                        <Polygon fx:id="Car87" fill="#fff700" layoutX="29.0" layoutY="40.0" points="-17.840526580810547, -0.5019073486328125, 13.909233093261719, -0.5019073486328125, -0.5731124877929688, -33.46659851074219" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </Pane>
+               </children></Pane>
             <Pane layoutX="618.0" layoutY="-2.0" prefHeight="212.0" prefWidth="72.0" style="-fx-background-color: #00900c;">
                <children>
                   <Label alignment="BOTTOM_RIGHT" layoutX="-75.0" layoutY="36.0" prefHeight="74.0" prefWidth="223.0" rotate="90.0" text="Arrival" textFill="WHITE">
@@ -24,61 +45,45 @@
                   </Label>
                </children>
             </Pane>
-            <Line endX="-78.54405212402344" layoutX="561.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="551.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="339.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="481.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="277.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="411.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="631.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="408.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="615.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="218.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="218.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="277.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="339.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="411.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="408.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="481.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="561.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="631.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="551.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="615.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="218.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="277.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="339.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="411.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="408.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="481.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="561.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="631.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="551.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="615.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="218.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="277.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="339.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="411.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="408.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="481.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="561.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="631.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="551.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="615.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="674.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="674.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="674.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="674.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
          </children>
       </Pane>
-      <ImageView fx:id="Car09" fitHeight="25.0" fitWidth="65.0" layoutX="30.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../image/car_black_09.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="Car31" fitHeight="25.0" fitWidth="65.0" layoutX="30.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../image/car_blue_31.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="Car87" fitHeight="25.0" fitWidth="65.0" layoutX="30.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../image/car_green_87.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="Car12" fitHeight="25.0" fitWidth="65.0" layoutX="30.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../image/car_yellow_12.png" />
-         </image>
-      </ImageView>
       <HBox layoutX="9.0" layoutY="246.0" prefHeight="51.0" prefWidth="327.0">
          <children>
-            <Button fx:id="startButton" mnemonicParsing="false" onAction="#handleStart" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: green;" text="Start" textFill="WHITE" />
-            <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#handlePause" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: blue;" text="Pause" textFill="WHITE" translateX="20.0" />
-            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#handleReset" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: red;" text="Reset" textFill="WHITE" translateX="40.0" />
+            <Button fx:id="startButton" mnemonicParsing="false" onAction="#handleStart" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: green; -fx-font-weight: bold;" text="Start" textFill="WHITE" />
+            <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#handlePause" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: blue; -fx-font-weight: bold;" text="Pause" textFill="WHITE" translateX="20.0" />
+            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#handleReset" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: red; -fx-font-weight: bold;" text="Reset" textFill="WHITE" translateX="40.0" />
          </children>
       </HBox>
       <HBox layoutX="9.0" layoutY="318.0" prefHeight="100.0" prefWidth="398.0">
@@ -88,10 +93,25 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Slider fx:id="speedSlider" majorTickUnit="1.0" max="2.0" min="0.25" minorTickCount="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" translateX="60.0" translateY="20.0" />
+            <Slider fx:id="speedSlider" majorTickUnit="1.0" max="2.0" min="0.25" minorTickCount="1" prefHeight="38.0" prefWidth="155.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" translateX="35.0" translateY="20.0" />
          </children>
       </HBox>
-      <Label fx:id="winnerLabel" alignment="TOP_LEFT" layoutX="323.0" layoutY="246.0" prefHeight="51.0" prefWidth="386.0" text="First Place:">
+      <Label fx:id="winnerLabel" alignment="TOP_LEFT" layoutX="340.0" layoutY="246.0" prefHeight="51.0" prefWidth="386.0" text="First Place:">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="SecondPlaceLabel" alignment="TOP_LEFT" layoutX="340.0" layoutY="282.0" prefHeight="51.0" prefWidth="386.0" text="Second Place:">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="FourthPlaceLabel" alignment="TOP_LEFT" layoutX="340.0" layoutY="357.0" prefHeight="51.0" prefWidth="386.0" text="Fourth Place:">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ThirdPlaceLabel" alignment="TOP_LEFT" layoutX="340.0" layoutY="320.0" prefHeight="51.0" prefWidth="386.0" text="Third Place:">
          <font>
             <Font name="Rockwell" size="18.0" />
          </font>
