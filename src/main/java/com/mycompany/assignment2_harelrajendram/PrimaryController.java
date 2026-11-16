@@ -17,6 +17,7 @@ public class PrimaryController {
     // Git Link:https://github.com/HarelRajendram/Assignment02_HarelRajendram.git
 
     private double finishLineX = 650.0;
+    private int place = 1;
     
     private ParallelTransition race;
     
@@ -42,7 +43,13 @@ public class PrimaryController {
 
     @FXML private Button startButton;
     
-     @FXML private Label winnerLabel;
+    @FXML private Label winnerLabel;
+     
+    @FXML private Label FourthPlaceLabel;
+
+    @FXML private Label SecondPlaceLabel;
+
+    @FXML private Label ThirdPlaceLabel;
      
      
      public void initialize() {
@@ -60,6 +67,7 @@ public class PrimaryController {
      
     //methods to handle each button
     public void handleStart() {
+        
         //generates random speed for each cars
         double randomSeconds1 = 1.0 + (Math.random() * 15.0); 
         double randomSeconds2 = 1.0 + (Math.random() * 15.0);
@@ -74,25 +82,17 @@ public class PrimaryController {
             tt4 = new TranslateTransition(Duration.seconds(randomSeconds4),Car87);
             
              //changes the label to announce the winner
-     tt1.setOnFinished(event -> {
-         winnerLabel.setText("Congratulations Car09 has won the race! ");
-         race.stop();
-        });
+     tt1.setOnFinished(e -> assignPlace("Car09")
+     );
      
-     tt2.setOnFinished(event -> {
-         winnerLabel.setText("Congratulations Car12 has won the race! ");
-         race.stop();
-        });
+     tt2.setOnFinished(e -> assignPlace("Car12")
+     );
      
-     tt3.setOnFinished(event -> {
-         winnerLabel.setText("Congratulations Car31 has won the race! ");
-         race.stop();
-        });
+     tt3.setOnFinished(e -> assignPlace("Car31")
+        );
      
-     tt4.setOnFinished(event -> {
-         winnerLabel.setText("Congratulations Car87 has won the race! ");
-         race.stop();
-        });
+     tt4.setOnFinished(e -> assignPlace("Car87")
+        );
             
             Car09.setTranslateX(30);
             Car12.setTranslateX(30);
@@ -139,6 +139,34 @@ public class PrimaryController {
             Car31.setTranslateX(15);
             Car87.setTranslateX(15);
             
+            winnerLabel.setText("Winner of the race:");
+            SecondPlaceLabel.setText("Second place of the race:");
+            ThirdPlaceLabel.setText("Third place of the race:");
+            FourthPlaceLabel.setText("Last place of the race:");
+            place = 1;
+            
             race = null;
     }
+      private void assignPlace(String carName) {
+        switch (place) {
+            case 1:
+                winnerLabel.setText("Winner of the race:" + carName);
+                place++;
+                break;
+            case 2:
+                SecondPlaceLabel.setText("Second place of the race:" + carName);
+                place++;
+                break;
+            case 3:
+                ThirdPlaceLabel.setText("Third place of the race:" + carName);
+                place++;
+                break;
+            case 4:
+                FourthPlaceLabel.setText("Last place of the race:" + carName);
+                place++;
+                break;
+            default:
+                break;
+        }
+      }
 }
