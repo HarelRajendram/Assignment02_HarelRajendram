@@ -14,22 +14,22 @@
             <Font name="Al Bayan Bold" size="24.0" />
          </font>
       </Label>
-      <ImageView fx:id="Car09" fitHeight="50.0" fitWidth="150.0" layoutX="60.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Car09" fitHeight="50.0" fitWidth="150.0" layoutX="42.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../image/car_black_09.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="Car31" fitHeight="50.0" fitWidth="150.0" layoutX="400.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Car31" fitHeight="50.0" fitWidth="150.0" layoutX="400.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../image/car_blue_31.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="Car87" fitHeight="50.0" fitWidth="150.0" layoutX="60.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Car87" fitHeight="50.0" fitWidth="150.0" layoutX="40.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../image/car_green_87.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="Car12" fitHeight="50.0" fitWidth="150.0" layoutX="415.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Car12" fitHeight="50.0" fitWidth="150.0" layoutX="411.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../image/car_yellow_12.png" />
          </image>
