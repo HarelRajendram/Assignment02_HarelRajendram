@@ -7,40 +7,34 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.assignment2_harelrajendram.SecondaryController">
    <children>
       <Label layoutX="200.0" layoutY="22.0" prefHeight="50.0" prefWidth="200.0" text="Meet the racers">
          <font>
             <Font name="Al Bayan Bold" size="24.0" />
          </font>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="36.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Car09" fitHeight="50.0" fitWidth="150.0" layoutX="60.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../image/car_black_09.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="332.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Car31" fitHeight="50.0" fitWidth="150.0" layoutX="400.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../image/car_blue_31.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Car87" fitHeight="50.0" fitWidth="150.0" layoutX="60.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../image/car_green_87.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="332.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Car12" fitHeight="50.0" fitWidth="150.0" layoutX="415.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../image/car_yellow_12.png" />
          </image>
       </ImageView>
-      <Button layoutX="332.0" layoutY="327.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="102.0" style="-fx-font-weight: bold; -fx-padding: 5px;" text="Next">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <Button layoutX="178.0" layoutY="327.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="102.0" style="-fx-font-weight: bold; -fx-padding: 5px;" text="Previous">
+      <Button fx:id="startRaceButton" layoutX="233.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleRaceButton" prefHeight="50.0" prefWidth="135.0" style="-fx-font-weight: bold; -fx-padding: 5px;" text="Start race">
          <font>
             <Font size="18.0" />
          </font>

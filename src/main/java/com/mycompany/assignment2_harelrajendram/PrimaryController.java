@@ -72,12 +72,6 @@ public class PrimaryController {
      
      
      public void initialize() throws IOException {
-         Parent root = FXMLLoader.load(getClass().getResource("secondary.fxml"));
-        Stage stage = (Stage) startButton.getScene().getWindow();
-        stage.setScene(new Scene(root));
-        stage.setTitle("Car Racing Simulator");
-        stage.show();
-         
          Car09.getPoints().clear();
          Car12.getPoints().clear();
          Car31.getPoints().clear();
