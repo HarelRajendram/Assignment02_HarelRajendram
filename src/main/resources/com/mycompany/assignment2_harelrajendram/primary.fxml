@@ -9,13 +9,13 @@
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.assignment2_harelrajendram.PrimaryController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.assignment2_harelrajendram.PrimaryController">
    <children>
-      <Pane layoutX="9.0" layoutY="29.0" prefHeight="209.0" prefWidth="689.0" style="-fx-background-color: grey;">
+      <Pane layoutX="9.0" layoutY="29.0" prefHeight="209.0" prefWidth="708.0" style="-fx-background-color: grey;">
          <children>
-            <Pane layoutX="618.0" layoutY="-2.0" prefHeight="212.0" prefWidth="72.0" style="-fx-background-color: #00900c;">
+            <Pane layoutX="632.0" layoutY="-2.0" prefHeight="212.0" prefWidth="76.0" style="-fx-background-color: #00900c;">
                <children>
-                  <Label alignment="BOTTOM_RIGHT" layoutX="-75.0" layoutY="36.0" prefHeight="74.0" prefWidth="223.0" rotate="90.0" text="Arrival" textFill="WHITE">
+                  <Label alignment="BOTTOM_RIGHT" layoutX="-63.0" layoutY="38.0" prefHeight="51.0" prefWidth="223.0" rotate="90.0" text="Arrival" textFill="WHITE">
                      <font>
                         <Font name="PingFang TC Semibold" size="48.0" />
                      </font>
@@ -26,22 +26,42 @@
                <children>
                   <Pane fx:id="Car09Layout" layoutX="-4.0" layoutY="-13.0" prefHeight="51.0" prefWidth="60.0">
                      <children>
-                        <Polygon fx:id="Car09" fill="#5f6a75" layoutX="24.0" layoutY="35.0" points="-21.5, 7.5, 20.49249267578125, 7.5, -0.5, -30.5" stroke="BLACK" strokeType="INSIDE" />
+                        <Polygon fx:id="Car09" fill="#5f6a75" layoutX="24.0" layoutY="33.0" points="-21.5, 7.5, 20.49249267578125, 7.5, -0.5, -30.5" stroke="BLACK" strokeType="INSIDE" />
+                        <Label layoutX="22.0" layoutY="35.0" style="-fx-background-color: white;" text="Car 08">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
                      </children>
                   </Pane>
                   <Pane fx:id="Car12Layout" layoutX="-5.0" layoutY="32.0" prefHeight="51.0" prefWidth="60.0">
                      <children>
-                        <Polygon fx:id="Car12" fill="#fff025" layoutX="24.0" layoutY="35.0" points="-19.954551696777344, 4.5646514892578125, 16.251319885253906, 4.5646514892578125, -2.6871376037597656, -29.970176696777344" stroke="BLACK" strokeType="INSIDE" />
+                        <Polygon fx:id="Car12" fill="#eedf37" layoutX="24.0" layoutY="35.0" points="-19.954551696777344, 4.5646514892578125, 16.251319885253906, 4.5646514892578125, -2.6871376037597656, -29.970176696777344" stroke="BLACK" strokeType="INSIDE" />
+                        <Label layoutX="23.0" layoutY="30.0" style="-fx-background-color: white;" text="Car 12">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
                      </children>
                   </Pane>
                   <Pane fx:id="Car31Layout" layoutX="-17.0" layoutY="85.0" prefHeight="51.0" prefWidth="60.0">
                      <children>
                         <Polygon fx:id="Car31" fill="#00a3ff" layoutX="37.0" layoutY="36.0" points="-21.068580627441406, 3.480926513671875, 14.023262023925781, 3.480926513671875, 0.09792709350585938, -33.83897399902344" stroke="BLACK" strokeType="INSIDE" />
+                        <Label layoutX="31.0" layoutY="35.0" style="-fx-background-color: white;" text="Car 31">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
                      </children>
                   </Pane>
-                  <Pane fx:id="Car87Layout" layoutX="-12.0" layoutY="131.0" prefHeight="51.0" prefWidth="60.0">
+                  <Pane fx:id="Car87Layout" layoutX="14.0" layoutY="143.0" prefHeight="51.0" prefWidth="60.0">
                      <children>
-                        <Polygon fx:id="Car87" fill="#1fa645" layoutX="34.0" layoutY="40.0" points="-17.840526580810547, -0.5019073486328125, 13.909233093261719, -0.5019073486328125, -0.5731124877929688, -33.46659851074219" stroke="BLACK" strokeType="INSIDE" />
+                        <Polygon fx:id="Car87" fill="#1fa645" layoutX="6.0" layoutY="27.0" points="-17.840526580810547, -0.5019073486328125, 13.909233093261719, -0.5019073486328125, -0.5731124877929688, -33.46659851074219" stroke="BLACK" strokeType="INSIDE" />
+                        <Label layoutX="9.0" layoutY="25.0" prefHeight="17.0" prefWidth="31.0" style="-fx-background-color: white;" text="Car 87 ">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
                      </children>
                   </Pane>
                </children></Pane>
@@ -73,10 +93,10 @@
             <Line endX="-78.54405212402344" layoutX="481.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="551.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
             <Line endX="-78.54405212402344" layoutX="615.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="674.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="674.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="674.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
-            <Line endX="-78.54405212402344" layoutX="674.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="678.0" layoutY="48.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="678.0" layoutY="97.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="678.0" layoutY="147.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="-78.54405212402344" layoutX="678.0" layoutY="197.0" startX="-100.0" stroke="WHITE" />
          </children>
       </Pane>
       <HBox layoutX="9.0" layoutY="246.0" prefHeight="51.0" prefWidth="327.0">
@@ -88,12 +108,12 @@
       </HBox>
       <HBox layoutX="9.0" layoutY="318.0" prefHeight="100.0" prefWidth="398.0">
          <children>
-            <Label text="Simulation Speed:" translateX="20.0" translateY="20.0">
+            <Label prefHeight="23.0" prefWidth="142.0" text="Simulation Speed:" translateX="10.0" translateY="20.0">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Slider fx:id="speedSlider" majorTickUnit="1.0" max="2.0" min="0.25" minorTickCount="1" prefHeight="38.0" prefWidth="155.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" translateX="35.0" translateY="20.0" />
+            <Slider fx:id="speedSlider" majorTickUnit="1.0" max="2.0" min="0.25" minorTickCount="1" prefHeight="38.0" prefWidth="155.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" translateX="25.0" translateY="20.0" />
          </children>
       </HBox>
       <Label fx:id="winnerLabel" alignment="TOP_LEFT" layoutX="340.0" layoutY="246.0" prefHeight="51.0" prefWidth="386.0" text="First Place:">

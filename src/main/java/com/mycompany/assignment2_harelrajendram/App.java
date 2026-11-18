@@ -17,8 +17,8 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-         Parent root = FXMLLoader.load(getClass().getResource("secondary.fxml"));
-        Scene scene = new Scene(root);
+        Parent root = FXMLLoader.load(getClass().getResource("secondary.fxml"));
+        scene = new Scene(root,725,500);
         stage.setScene(scene);
         stage.setTitle("Car Racing Simulation - Introduction");
         stage.show();

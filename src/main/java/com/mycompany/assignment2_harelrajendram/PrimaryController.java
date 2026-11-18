@@ -22,7 +22,7 @@ import javafx.util.Duration;
 public class PrimaryController {
     // Git Link:https://github.com/HarelRajendram/Assignment02_HarelRajendram.git
 
-    private double finishLineX = 650.0;
+    private final double finishLineX = 660.0;
     private int place = 1;
     
     private ParallelTransition race;
@@ -127,17 +127,17 @@ public class PrimaryController {
         place = 1;
         
         //generates random speed for each cars
-        double randomSeconds1 = 1.0 + (Math.random() * 13.0); 
-        double randomSeconds2 = 1.0 + (Math.random() * 13.0);
-        double randomSeconds3 = 1.0 + (Math.random() * 13.0);
-        double randomSeconds4 = 1.0 + (Math.random() * 13.0);
+        double randomSeconds1 = 1.0 + (Math.random() * 10.0); 
+        double randomSeconds2 = 1.0 + (Math.random() * 10.0);
+        double randomSeconds3 = 1.0 + (Math.random() * 10.0);
+        double randomSeconds4 = 1.0 + (Math.random() * 10.0);
         
         //applying the animations to each car
         if(race == null ) {
-            tt1 = new TranslateTransition(Duration.seconds(randomSeconds1),Car09);
-            tt2 = new TranslateTransition(Duration.seconds(randomSeconds2),Car12);
-            tt3 = new TranslateTransition(Duration.seconds(randomSeconds3),Car31);
-            tt4 = new TranslateTransition(Duration.seconds(randomSeconds4),Car87);
+            tt1 = new TranslateTransition(Duration.seconds(randomSeconds1),Car09Layout);
+            tt2 = new TranslateTransition(Duration.seconds(randomSeconds2),Car12Layout);
+            tt3 = new TranslateTransition(Duration.seconds(randomSeconds3),Car31Layout);
+            tt4 = new TranslateTransition(Duration.seconds(randomSeconds4),Car87Layout);
             
              //changes the label to announce the winner
      tt1.setOnFinished(e -> assignPlace("Car09")
@@ -192,10 +192,10 @@ public class PrimaryController {
            if(race != null) {
              race.stop();
          }
-            Car09.setTranslateX(0);
-            Car12.setTranslateX(0);
-            Car31.setTranslateX(0);
-            Car87.setTranslateX(0);
+            Car09Layout.setTranslateX(0);
+            Car12Layout.setTranslateX(0);
+            Car31Layout.setTranslateX(0);
+            Car87Layout.setTranslateX(0);
             
             winnerLabel.setText("Winner of the race:");
             SecondPlaceLabel.setText("Second place of the race:");
