@@ -175,10 +175,10 @@ public class PrimaryController {
         place = 1;
         
         //generates random speed for each cars
-        double randomSeconds1 = 1.0 + (Math.random() * 7.0); 
-        double randomSeconds2 = 1.0 + (Math.random() * 7.0);
-        double randomSeconds3 = 1.0 + (Math.random() * 7.0);
-        double randomSeconds4 = 1.0 + (Math.random() * 7.0);
+        double randomSeconds1 = 1.0 + (Math.random() * 5.0); 
+        double randomSeconds2 = 1.0 + (Math.random() * 5.0);
+        double randomSeconds3 = 1.0 + (Math.random() * 5.0);
+        double randomSeconds4 = 1.0 + (Math.random() * 5.0);
         
         //applying the animations to each car
         if(race == null ) {
@@ -263,8 +263,8 @@ public class PrimaryController {
              race.stop(); 
              if (player != null) {
               player.stop();
+              player.seek(Duration.ZERO);
              }
-             player.seek(Duration.ZERO);
          }
             Car09Layout.setTranslateX(0);
             Car12Layout.setTranslateX(0);
@@ -280,21 +280,22 @@ public class PrimaryController {
             race = null;
     }
       private void assignPlace(String carName) {
+          String carColor = getCarColor(carName);
         switch (place) {
             case 1:
-                winnerLabel.setText("Winner of the race:" + carName);
+                winnerLabel.setText(" The Winner: " + carName + " " + carColor);
                 place++;
                 break;
             case 2:
-                SecondPlaceLabel.setText("Second place of the race:" + carName);
+                SecondPlaceLabel.setText("Second place: " + carName + " " + carColor);
                 place++;
                 break;
             case 3:
-                ThirdPlaceLabel.setText("Third place of the race:" + carName);
+                ThirdPlaceLabel.setText("Third place: " + carName + " " + carColor);
                 place++;
                 break;
             case 4:
-                FourthPlaceLabel.setText("Last place of the race:" + carName);
+                FourthPlaceLabel.setText("Last place: " + carName + " " + carColor);
                 place++;
                 break;
             default:
@@ -324,4 +325,17 @@ public class PrimaryController {
 
     return new ParallelTransition(rt1, rt2,rt3,rt4);
 }
+   private String getCarColor(String car) {
+    switch(car) {
+       case "Car09":
+           return "(Grey)";
+       case "Car12":
+           return "(Yellow)";
+       case "Car31": 
+           return "(Blue)";
+       case "Car87":
+           return"(Green)";
+       default : return "";
+   }
+   }
 }

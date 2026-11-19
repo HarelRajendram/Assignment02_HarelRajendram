@@ -42,10 +42,10 @@ public class SecondaryController {
            Car87.setOpacity(0.0);
            
            SequentialTransition sqMain = new SequentialTransition(
-                    carFade(Car09, Duration.seconds(3),Duration.seconds(1.0)),
-                   carFade(Car12, Duration.seconds(3),Duration.seconds(1.0)),
-                   carFade(Car31, Duration.seconds(3),Duration.seconds(1.0)),
-                   carFade(Car87, Duration.seconds(3),Duration.seconds(1.0)));
+                    carFade(Car09, Duration.seconds(2),Duration.seconds(1.0)),
+                   carFade(Car12, Duration.seconds(2),Duration.seconds(1.0)),
+                   carFade(Car31, Duration.seconds(2),Duration.seconds(1.0)),
+                   carFade(Car87, Duration.seconds(2),Duration.seconds(1.0)));
            sqMain.setCycleCount(Animation.INDEFINITE);
            sqMain.play();
            
