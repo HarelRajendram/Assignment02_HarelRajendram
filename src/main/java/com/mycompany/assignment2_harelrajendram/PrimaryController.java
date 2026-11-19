@@ -4,6 +4,7 @@ import java.io.IOException;
 import javafx.animation.Animation;
 import javafx.animation.Interpolator;
 import javafx.animation.ParallelTransition;
+import javafx.animation.RotateTransition;
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,6 +16,8 @@ import javafx.scene.control.Slider;
 import javafx.scene.effect.MotionBlur;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Line;
 import javafx.scene.shape.Polygon;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -22,7 +25,7 @@ import javafx.util.Duration;
 public class PrimaryController {
     // Git Link:https://github.com/HarelRajendram/Assignment02_HarelRajendram.git
 
-    private final double finishLineX = 660.0;
+    private final double finishLineX = 620.0;
     private int place = 1;
     
     private ParallelTransition race;
@@ -69,9 +72,50 @@ public class PrimaryController {
     @FXML private Label SecondPlaceLabel;
 
     @FXML private Label ThirdPlaceLabel;
-     
-     
-     public void initialize() throws IOException {
+    
+    @FXML private Circle car09Wheel1;
+
+    @FXML private Circle car09Wheel2;
+
+    @FXML private Circle car12Wheel1;
+
+    @FXML private Circle car12Wheel2;
+
+    @FXML private Circle car31Wheel1;
+
+    @FXML private Circle car31Wheel2;
+
+    @FXML private Circle car87Wheel1;
+
+    @FXML private Circle car87Wheel2;
+    
+     @FXML
+    private Line car09Spoke1;
+
+    @FXML
+    private Line car09Spoke2;
+ 
+    @FXML
+    private Line car12Spoke1;
+
+    @FXML
+    private Line car12Spoke2;
+    
+    @FXML
+    private Line car31Spoke1;
+
+    @FXML
+    private Line car31Spoke2;
+
+     @FXML
+    private Line car87Spoke1;
+
+    @FXML
+    private Line car87Spoke2;
+
+
+    public void initialize() throws IOException {
+        
          Car09.getPoints().clear();
          Car12.getPoints().clear();
          Car31.getPoints().clear();
@@ -127,10 +171,10 @@ public class PrimaryController {
         place = 1;
         
         //generates random speed for each cars
-        double randomSeconds1 = 1.0 + (Math.random() * 10.0); 
-        double randomSeconds2 = 1.0 + (Math.random() * 10.0);
-        double randomSeconds3 = 1.0 + (Math.random() * 10.0);
-        double randomSeconds4 = 1.0 + (Math.random() * 10.0);
+        double randomSeconds1 = 1.0 + (Math.random() * 8.0); 
+        double randomSeconds2 = 1.0 + (Math.random() * 8.0);
+        double randomSeconds3 = 1.0 + (Math.random() * 8.0);
+        double randomSeconds4 = 1.0 + (Math.random() * 8.0);
         
         //applying the animations to each car
         if(race == null ) {
@@ -167,9 +211,16 @@ public class PrimaryController {
             tt3.setInterpolator(Interpolator.EASE_BOTH);
             tt4.setInterpolator(Interpolator.EASE_BOTH);
             
-            race = new ParallelTransition(tt1,tt2,tt3,tt4);
+            ParallelTransition wheels1 = wheelAnimation(Duration.seconds(0.3), car09Wheel1, car09Wheel2,car09Spoke1,car09Spoke2);
             
-             
+            ParallelTransition wheels2 = wheelAnimation(Duration.seconds(0.3), car12Wheel1, car12Wheel2,car12Spoke1,car12Spoke2);
+            
+            ParallelTransition wheels3 = wheelAnimation(Duration.seconds(0.3), car31Wheel1, car31Wheel2,car31Spoke1,car31Spoke2);
+            
+            ParallelTransition wheels4 = wheelAnimation(Duration.seconds(0.3), car87Wheel1, car87Wheel2,car87Spoke1,car87Spoke2);
+   
+            race = new ParallelTransition(tt1,tt2,tt3,tt4,wheels1,wheels2,wheels3,wheels4);
+            
 //        MotionBlur motionblur = new MotionBlur();
 //        motionblur.setRadius(5.0); 
 //        motionblur.setAngle(45.0);
@@ -227,4 +278,27 @@ public class PrimaryController {
                 break;
         }
       }
+   private ParallelTransition wheelAnimation(Duration duration, javafx.scene.Node n1, javafx.scene.Node n2, javafx.scene.Node n3, javafx.scene.Node n4) {
+    RotateTransition rt1 = new RotateTransition(duration, n1);
+    rt1.setByAngle(360);
+    rt1.setCycleCount(Animation.INDEFINITE);
+    rt1.setInterpolator(Interpolator.LINEAR);
+
+    RotateTransition rt2 = new RotateTransition(duration, n2);
+    rt2.setByAngle(360);
+    rt2.setCycleCount(Animation.INDEFINITE);
+    rt2.setInterpolator(Interpolator.LINEAR);
+    
+    RotateTransition rt3 = new RotateTransition(duration, n3);
+    rt3.setByAngle(360);
+    rt3.setCycleCount(Animation.INDEFINITE);
+    rt3.setInterpolator(Interpolator.LINEAR);
+    
+    RotateTransition rt4 = new RotateTransition(duration, n4);
+    rt4.setByAngle(360);
+    rt4.setCycleCount(Animation.INDEFINITE);
+    rt4.setInterpolator(Interpolator.LINEAR);
+
+    return new ParallelTransition(rt1, rt2,rt3,rt4);
+}
 }
