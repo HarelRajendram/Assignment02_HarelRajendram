@@ -16,6 +16,8 @@ import javafx.scene.control.Slider;
 import javafx.scene.effect.MotionBlur;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Polygon;
@@ -27,6 +29,8 @@ public class PrimaryController {
 
     private final double finishLineX = 620.0;
     private int place = 1;
+    
+     private MediaPlayer player;
     
     private ParallelTransition race;
     
@@ -115,7 +119,7 @@ public class PrimaryController {
 
 
     public void initialize() throws IOException {
-        
+       
          Car09.getPoints().clear();
          Car12.getPoints().clear();
          Car31.getPoints().clear();
@@ -230,18 +234,37 @@ public class PrimaryController {
 //        Car31.setEffect(motionblur);
 //        Car87.setEffect(motionblur);
         
+            if(player == null) {
+            String path = getClass().getResource("/com/mycompany/assignment2_harelrajendram/TakeOff.mp4").toExternalForm();
+            Media media = new Media(path);
+            
+            player = new javafx.scene.media.MediaPlayer(media);
+            player.setCycleCount(javafx.scene.media.MediaPlayer.INDEFINITE);
+            player.setAutoPlay(true);
+            }
+        
         }
         race.play();
+        if(player != null) {
+            player.play();
+        }
     
     }
      public void handlePause() {
          if(race != null) {
              race.pause();
+            if (player != null) {
+              player.pause();
+            }
          }
     }
       public void handleReset() {
            if(race != null) {
-             race.stop();
+             race.stop(); 
+             if (player != null) {
+              player.stop();
+             }
+             player.seek(Duration.ZERO);
          }
             Car09Layout.setTranslateX(0);
             Car12Layout.setTranslateX(0);
