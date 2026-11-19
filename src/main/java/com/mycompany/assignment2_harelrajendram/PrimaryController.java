@@ -175,10 +175,10 @@ public class PrimaryController {
         place = 1;
         
         //generates random speed for each cars
-        double randomSeconds1 = 1.0 + (Math.random() * 8.0); 
-        double randomSeconds2 = 1.0 + (Math.random() * 8.0);
-        double randomSeconds3 = 1.0 + (Math.random() * 8.0);
-        double randomSeconds4 = 1.0 + (Math.random() * 8.0);
+        double randomSeconds1 = 1.0 + (Math.random() * 7.0); 
+        double randomSeconds2 = 1.0 + (Math.random() * 7.0);
+        double randomSeconds3 = 1.0 + (Math.random() * 7.0);
+        double randomSeconds4 = 1.0 + (Math.random() * 7.0);
         
         //applying the animations to each car
         if(race == null ) {

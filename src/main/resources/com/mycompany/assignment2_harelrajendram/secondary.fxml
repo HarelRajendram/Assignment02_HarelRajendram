@@ -14,30 +14,30 @@
             <Font name="Al Bayan Bold" size="29.0" />
          </font>
       </Label>
-      <ImageView fx:id="Car09" fitHeight="77.0" fitWidth="158.0" layoutX="42.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../image/car_black_09.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="Car31" fitHeight="65.0" fitWidth="162.0" layoutX="521.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../image/car_blue_31.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="Car87" fitHeight="69.0" fitWidth="158.0" layoutX="48.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../image/car_green_87.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="Car12" fitHeight="64.0" fitWidth="150.0" layoutX="526.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../image/car_yellow_12.png" />
-         </image>
-      </ImageView>
       <Button fx:id="startRaceButton" layoutX="312.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleRaceButton" prefHeight="67.0" prefWidth="169.0" style="-fx-font-weight: bold; -fx-background-radius: 20px; -fx-background-color: #4a81ff;" text="Start race" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
+      <ImageView fx:id="Car31" fitHeight="204.0" fitWidth="530.0" layoutX="140.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/car_blue_31.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Car12" fitHeight="227.0" fitWidth="546.0" layoutX="140.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/car_yellow_12.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Car87" fitHeight="200.0" fitWidth="530.0" layoutX="140.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/car_green_87.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Car09" fitHeight="216.0" fitWidth="530.0" layoutX="140.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/car_black_09.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>
